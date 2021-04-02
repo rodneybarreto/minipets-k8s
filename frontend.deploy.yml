@@ -29,3 +29,7 @@ spec:
           value: "$(SHIPPING_SVC_SERVICE_HOST)"
         - name: SHIPPING_PORT
           value: "$(SHIPPING_SVC_SERVICE_PORT)"
+        - name: COMMENTS_HOST
+          value: "$(COMMENTS_SVC_SERVICE_HOST)"          
+        - name: COMMENTS_PORT
+          value: "$(COMMENTS_SVC_SERVICE_PORT)"

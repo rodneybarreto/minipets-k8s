@@ -1,0 +1,22 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: comments
+  labels:
+    app: comments
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: comments
+  template:
+    metadata:
+      labels:
+        app: comments
+    spec:
+      containers:
+      - name: comments-pod
+        image: rodneybarreto/minipets_comments-api:1.0.0
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8083
