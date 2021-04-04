@@ -1,21 +1,19 @@
-kind: Deployment
 apiVersion: apps/v1
+kind: Deployment
 metadata:
   name: shipping
-  labels:
-    app: shipping
 spec:
-  replicas: 1
   selector:
     matchLabels:
       app: shipping
+  replicas: 1
   template:
     metadata:
       labels:
         app: shipping
     spec:
       containers:
-      - name: shipping-pod
+      - name: shipping
         image: rodneybarreto/minipets_shipping-api:1.0.0
         imagePullPolicy: Always
         ports:
