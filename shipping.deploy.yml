@@ -16,5 +16,3 @@ spec:
       - name: shipping
         image: rodneybarreto/minipets_shipping-api:1.0.0
         imagePullPolicy: Always
-        ports:
-        - containerPort: 8082

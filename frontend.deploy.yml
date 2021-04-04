@@ -16,8 +16,6 @@ spec:
       - name: frontend
         image: rodneybarreto/minipets_frontend-app:1.1.0
         imagePullPolicy: Always
-        ports:
-        - containerPort: 8080
         env:       
         - name: PRODUCTS_HOST
           value: "$(PRODUCTS_SVC_SERVICE_HOST)"

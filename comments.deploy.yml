@@ -16,5 +16,3 @@ spec:
       - name: comments
         image: rodneybarreto/minipets_comments-api:1.0.0
         imagePullPolicy: Always
-        ports:
-        - containerPort: 8083
